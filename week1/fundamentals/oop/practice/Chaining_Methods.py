@@ -38,7 +38,6 @@ user3 = user("Sonny", "Rollins", "srollins@codingdojo.com", 92)
 my_user.spend_points(50)
 user2.enroll().spend_points(80)
 
-
 my_user.display_info()
 user2.display_info()
 user3.display_info()
