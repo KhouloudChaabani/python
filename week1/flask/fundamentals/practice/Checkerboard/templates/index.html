@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkboard</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 30px;
+            height: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        {% for row in range(y) %}
+            <tr>
+                {% for col in range(x) %}
+                    {% if (row+col ) % 2 == 0 %}
+                    <td style="background-color : {{color_1}};" ></td> 
+                    {%else %}
+                    <td style="background-color : {{color_2}} ;" ></td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% endfor %}  
+</body>
+</html>
